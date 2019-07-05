@@ -2,7 +2,7 @@
   <div class='study'>
     <div class="container">
       <div class="row">
-        <div class="col-xl-10 offset-xl-1 info">
+        <div class="col-xl-10 offset-md-1 info">
           <h2>Об обучении</h2>
           <ul>
             <li>У нас нет отбора в школу - мы рады всем желающим посетить наши лекции;</li>
@@ -42,6 +42,34 @@
   }
   li:not(:last-child){
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px){
+  .info{
+    padding-top: 70px;
+    h2{
+      font-size: 40px;
+      line-height: 55px;
+      margin-bottom: 50px;
+    }
+    li{
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .info{
+    h2{
+      font-size: 30px;
+      line-height: 45px;
+      // margin-bottom: 50px;
+    }
+    li{
+      font-size: 18px;
+      line-height: 34px;
+    }
   }
 }
 </style>

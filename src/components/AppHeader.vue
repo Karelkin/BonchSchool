@@ -2,18 +2,24 @@
   <div class='app-header'>
     <div class="background">
     </div>
-    <div class="header">
+    <div class="header" :class="{'header-open': menu}">
       <div class="container">
         <div class="row">
-          <div class="col-xl-3 col-md-3 col-6 header__logo">
+          <div class="col-xl-3 col-md-3 col-12 header__logo">
             <img src="@/assets/img/logo.svg" alt="">
+            <div class="menu__icon" :class="{'menu_state_open': menu}" @click='menu=!menu'>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-          <div class="col-xl-9 col-md-9 col-6 header__nav">
-            <nav>
-              <a href="#school">О школе</a>
-              <a href="#courses">Направления</a>
-              <a href="#schedule">Расписание</a>
-              <a href="#">Контакты</a>
+          <div class="col-xl-9 col-md-9 col-12 header__nav">
+            <nav :class="{'open': menu}">
+              <a href="#" v-scroll-to="'#school'" @click='menu=!menu'>О школе</a>
+              <a href="#" v-scroll-to="'#courses'" @click='menu=!menu'>Направления</a>
+              <a href="#" v-scroll-to="'#schedule'" @click='menu=!menu'>Расписание</a>
+              <a href="#" v-scroll-to="'#footer'" @click='menu=!menu'>Контакты</a>
             </nav>
           </div>
         </div>
@@ -26,7 +32,7 @@
 export default{
   data() {
     return {
-
+      menu: true,
     }
   },
 }
@@ -36,6 +42,57 @@ export default{
 *{
   padding-left: 0;
   padding-right: 0;
+}
+.menu__icon {
+  display: none;
+  width: 45px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+}
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: #333333;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px;
+}
+.menu__icon span:nth-child(4) {
+  top: 26px;
+}
+.menu_state_open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+.menu_state_open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+.menu_state_open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+.menu_state_open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+.header__nav {
+  background-color: #fff;
+  z-index: 5;
+  nav.open{
+    display: flex;  
+  }
 }
 .app-header{
   min-height: 96px;
@@ -58,6 +115,7 @@ export default{
 }
 .header__logo{
   display: flex;
+  justify-content: space-between;
   align-items: center;
   img{
     max-width: 173px;
@@ -79,11 +137,38 @@ export default{
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 992px){
   .header__nav{
+    a{
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .header-open{
+    background-color: #fff;
+    z-index: 6;
+    box-shadow: 0px 15px 10px -15px;
+  }
+  .header__logo{
+    // position: fixed;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+  }
+  .menu__icon {
+    display: block;
+  }
+  .header__nav{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
     nav{
-      display: flex;
+      // display: flex;
       flex-direction: column;
+      align-items: flex-end;
+      display: none;
       padding: 8px 0;
       a+a{
         margin-top: 5px;

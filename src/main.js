@@ -6,6 +6,9 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '@/assets/scss/fonts.scss'
+import VueScrollTo from 'vue-scrollto'
+
+Vue.use(VueScrollTo)
 
 Vue.use(BootstrapVue)
 

@@ -1,18 +1,15 @@
 <template>
-  <!-- <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div> -->
   <div>
     <app-header></app-header>
     <school></school>
+    <geek></geek>
+    <experience></experience>
+    <courses></courses>
     <study></study>
     <schedule></schedule>
     <results></results>
-    <courses></courses>
+    <team></team>
+    <my-footer></my-footer>
   </div>
 </template>
 
@@ -23,6 +20,10 @@ import Study from '@/components/Study'
 import Schedule from '@/components/Schedule'
 import Results from '@/components/Results'
 import Courses from '@/components/Courses'
+import Experience from '@/components/Experience'
+import MyFooter from '@/components/Footer'
+import Team from '@/components/Team'
+import Geek from '@/components/Geek'
 
 export default{
   components: {
@@ -31,7 +32,11 @@ export default{
     Study,
     Schedule,
     Results,
-    Courses
+    Courses,
+    Experience,
+    MyFooter,
+    Team,
+    Geek
   }
 }
 </script>

@@ -2,7 +2,7 @@
   <div class='courses' id='courses'>
     <div class="container">
       <div class="row">
-        <div class="col-12 course__items course1" 
+        <div class="col-sm-12 offset-sm-0 col-10 offset-1 course__items course1" 
           :class="{'course1': selectedCourse.course1, 
             'course2': selectedCourse.course2, 
             'course3': selectedCourse.course3, 
@@ -11,7 +11,7 @@
           >
           <div class="container">
             <div class="row">
-              <div class="col-lg-7 offset-lg-5 col-12 item">
+              <div class="col-xl-7 offset-xl-5 col-lg-8 offset-lg-4 col-12 item">
                 <h2>Направления обучения</h2>
                 <ul>
                   <li 
@@ -22,7 +22,8 @@
                     {{course.title}}
                   </li>
                 </ul>
-                <p>{{selectedCourse.content}}</p>    
+                <p>{{selectedCourse.content}}</p>   
+                <!-- <img :src="course.img: require('./../assets/course-1.svg')" class='' alt="">  -->
               </div>
             </div>
           </div>
@@ -40,38 +41,38 @@ export default{
         {
           id: 1,
           title: 'Front-End',
-          content: 'Проектирование интерфейсов от "А" до "Я". Здесь ты наконец-то научишься отличать UX от UI, освоишь Figma и попробуешь себя во всех основных этапах работы web-дизайнера',
-          course1: true,
+          content: 'Создание интерфейсов, с которыми будут взаимодействовать пользователи, верстка сайтов по современным стандартам, обучение основам JavaScript, HTML, CSS.',
+          course1: true
         },
         {
           id: 2,
           title: 'Back-End',
-          content: '3123213213',
+          content: 'Направление, в рамках которого проектируется и разрабатывается логика web-приложения, изучение основ Laravel, CRUD, MySQL.',
           course2: true
         },
         {
           id: 3,
           title: 'Mobile',
-          content: 'fdsfsdfdsfsd',
+          content: 'Направление по разработке нативных приложений на платформу Android с использованием передового языка программирования Kotlin. Также будут изучены возможности хранения данных, работа с JSON (сервером) и другими фичами.',
           course3: true
         },
         {
           id: 4,
           title: 'Design',
-          content: 'gfdgfdghfgjytrutyurhuyrt',
+          content: 'Проектирование интерфейсов от "А" до "Я". Здесь ты наконец-то научишься отличать UX от UI, освоишь Figma и попробуешь себя во всех основных этапах работы web-дизайнера.',
           course4: true
         },
         {
           id: 5,
           title: 'SMM',
-          content: '111111',
+          content: 'Мы научим не только создавать контент, оформлять и продвигать контент, но и взаимодействовать с алгоритмами социальных сетей так, чтобы они работали на тебя. Подготовлено совместно с Гуманитарным Факультетом СПБГУТ.',
           course5: true
         }
       ],
       selectedCourse: {
         id: 1,
         title: 'Front-End',
-        content: 'Проектирование интерфейсов от "А" до "Я". Здесь ты наконец-то научишься отличать UX от UI, освоишь Figma и попробуешь себя во всех основных этапах работы web-дизайнера',
+        content: 'Создание интерфейсов, с которыми будут взаимодействовать пользователи, верстка сайтов по современным стандартам, обучение основам JavaScript, HTML, CSS.',
         course1: true,
         first: 0
       },
@@ -84,14 +85,19 @@ export default{
 </script>
 
 <style lang='scss' scoped>
+.courses{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 .course__items{
   border-radius: 40px;
   background-repeat: no-repeat;
-  background-size: cover;
   min-height: 480px;
+  background-size: 101% 100%;
+  // background: linear-gradient(300.85deg, #57944F 3.8%, #97B730 90.98%);
 }
 .course1{
-  background-image: url('../assets/img/course-2.jpg');
+  background-image: url('../assets/img/course-4.jpg');
 }
 .course2{
   background-image: url('../assets/img/course-1.jpg');
@@ -99,8 +105,14 @@ export default{
 .course3{
   background-image: url('../assets/img/course-3.jpg');
 }
+.course4{
+  background-image: url('../assets/img/course-2.jpg');
+}
+.course5{
+  background-image: url('../assets/img/course-5.jpg');
+}
 .item{
-  // padding-left: 40px;
+  // padding-left: 20px;
   h2{
     color: #fff;
     font-family: 'Avenir Next Cyr Demi', sans-serif;
@@ -139,7 +151,7 @@ export default{
     border-radius: 20px;
   }
   li+li{
-    margin-left: 35px;
+    margin-left: 25px;
   }
   p{
     color: #fff;
@@ -147,6 +159,105 @@ export default{
     font-size: 20px;
     line-height: 35px;
     padding-left: 5px;
+  }
+}
+
+@media (max-width: 992px){
+  .item{
+    ul{
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    h2{
+      margin-top: 40px;
+    }
+  }
+  .course1{
+    background: linear-gradient(267.31deg, #F07D5A -14.54%, #FFBE56 90.16%);
+    overflow: hidden;
+  }
+  .course2{
+    background: linear-gradient(301.16deg, #F78B2E 3.8%, #EF3B3B 90.98%);
+    overflow: hidden;
+  }
+  .course3{
+    background: linear-gradient(301.16deg, #51698D 3.8%, #70AAB8 90.98%);
+    overflow: hidden;
+  }
+  .course4{
+    background: linear-gradient(300.85deg, #57944F 3.8%, #97B730 90.98%);
+    overflow: hidden;
+  }
+  .course5{
+    background: linear-gradient(301.16deg, #6B925C 3.8%, #BDD339 82.36%);
+    overflow: hidden;
+  }
+  .course1:before,
+  .course2:before,
+  .course3:before,
+  .course4:before,
+  .course5:before,{
+    content: '';
+    position: absolute;
+    background-size: 240px 240px; 
+    width: 240px;
+    height: 240px;
+    left: 70px;
+    top: 130px;
+  }
+  .course1:before{
+    background-image: url('../assets/img/course-4.svg');
+  }
+  .course2:before{
+    background-image: url('../assets/img/course-2.svg');
+  }
+  .course3:before{
+    background-image: url('../assets/img/course-3.svg');
+  }
+  .course4:before{
+    background-image: url('../assets/img/course-1.svg');
+  }
+  .course5:before{
+    background-image: url('../assets/img/course-5.svg');
+  }
+}
+
+@media (max-width: 768px){
+  .item{
+    h2{
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+  .course1:before,
+  .course2:before,
+  .course3:before,
+  .course4:before,
+  .course5:before,{
+    left: -60px;
+  }
+}
+
+@media (max-width: 575px){
+  .course1:before,
+  .course2:before,
+  .course3:before,
+  .course4:before,
+  .course5:before,{
+    top: 175px;
+  }
+}
+
+@media (max-width: 500px){
+  .item{
+    h2{
+      font-size: 30px;
+      line-height: 45px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 26px;
+    }
   }
 }
 </style>
