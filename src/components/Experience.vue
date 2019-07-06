@@ -238,5 +238,25 @@
       line-height: 32px;
     }
   }
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4{
+    max-height: 100px;
+    max-width: 100px;
+    font-size: 18px;
+  }
+  .item-1:before{
+    top: 25%;
+  }
+  .item-2:before{
+    top: 25%;
+  }
+  .item-3:before{
+    top: 25%;
+  }
+  .item-4:before{
+    top: 25%;
+  }
 }
 </style>
