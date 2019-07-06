@@ -72,7 +72,7 @@
 
 @media (max-width: 768px){
   .school-back{
-    top: 80px;
+    top: 140px;
     // right: -300px;
     // width: 32%;
   }
@@ -93,23 +93,26 @@
 
 @media (max-width: 500px){
   .school-back{
-    top: 100px;
-    right: -325px;
+    top: 110px;
+    right: -200px;
+    width: 350px;
   }
   .school__info{
     h1{
-      font-size: 30px;
-      line-height: 50px;
+      font-size: 28px;
+      line-height: 45px;
     }
     h3{
-      font-size: 25px;
+      font-size: 19px;
+      line-height: 24px;
     }
     .text-1{
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 16px;
+      line-height: 24px;
     }
     .text-2{
-      font-size: 18px;
+      font-size: 13px;
+      line-height: 18px;
     }
   }
 }

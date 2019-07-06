@@ -32,7 +32,7 @@
 export default{
   data() {
     return {
-      menu: true,
+      menu: false,
     }
   },
 }
@@ -161,15 +161,23 @@ export default{
   }
   .header__nav{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     nav{
       // display: flex;
+      width: 100%;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: center;
       display: none;
       padding: 8px 0;
+      a:not(:last-child){
+        width: 100%;
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 20px;
+        // border-bottom: 1px solid #000;
+      }
       a+a{
         margin-top: 5px;
         margin-left: 0;
