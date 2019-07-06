@@ -109,7 +109,7 @@
   line-height: 29px;
 }
 .item-1:before{
-  content: 'Лекции и  мастер-классы';
+  content: 'Лекции и мастер-классы';
   position: absolute;
   left: -190px;
   top: 35%;
@@ -125,7 +125,7 @@
   top: 35%;
 }
 .item-3:before{
-  content: 'Разработка  проекта';
+  content: 'Разработка проекта';
   position: absolute;
   max-width: 180px;
   text-align: end;
