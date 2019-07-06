@@ -11,7 +11,7 @@
             <h4>Получай крутые призы</h4>
           </div>
           <div class='play'>
-            <a href="#">Играть</a>
+            <a href="https://geek.bonch.dev/auth/vk">Играть</a>
           </div>
         </div>
       </div>
