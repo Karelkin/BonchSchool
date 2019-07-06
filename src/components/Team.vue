@@ -60,11 +60,10 @@
     font-size: 48px;
     line-height: 59px;
     margin-top: 50px;
-    margin-bottom: -20px;
   }
 }
 .item{
-  margin-top: 80px;
+  margin-top: 60px;
   img{
     max-width: 300px;
     width: 100%;
@@ -119,8 +118,8 @@
 }
 
 @media (max-width: 576px){
-  .item{
-    
+ .item{
+    margin-top: 50px;
   }
   .items-right{
     margin-top: 140px;
@@ -132,6 +131,7 @@
     h2{
       font-size: 30px;
       line-height: 45px;
+      margin-bottom: -20px;
     }
     h6{
       font-size: 20px;

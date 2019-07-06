@@ -2,6 +2,7 @@
   <div class='courses' id='courses'>
     <div class="container">
       <div class="row">
+        <transition name="fade" mode="out-in">
         <div class="col-sm-12 offset-sm-0 col-10 offset-1 course__items course1" 
           :class="{'course1': selectedCourse.course1, 
             'course2': selectedCourse.course2, 
@@ -28,6 +29,7 @@
             </div>
           </div>
         </div>
+        </transition> 
       </div>
     </div>
   </div>
@@ -93,7 +95,8 @@ export default{
   border-radius: 40px;
   background-repeat: no-repeat;
   min-height: 480px;
-  background-size: 101% 100%;
+  background-size: 101% 100%;  
+  transition: background-image .6s linear;
   // background: linear-gradient(300.85deg, #57944F 3.8%, #97B730 90.98%);
 }
 .course1{
@@ -172,9 +175,13 @@ export default{
       margin-top: 40px;
     }
   }
+  .course__items{
+    background: none;
+  }
   .course1{
     background: linear-gradient(267.31deg, #F07D5A -14.54%, #FFBE56 90.16%);
     overflow: hidden;
+    // transition: background 1s ease;
   }
   .course2{
     background: linear-gradient(301.16deg, #F78B2E 3.8%, #EF3B3B 90.98%);
@@ -197,6 +204,7 @@ export default{
   .course3:before,
   .course4:before,
   .course5:before,{
+    transition: background .5s linear;
     content: '';
     position: absolute;
     background-size: 240px 240px; 

@@ -27,7 +27,7 @@
   position: absolute;
   top: 0;
   right: 0px;
-  width: 500px;
+  width: 480px;
 }
 .school__info{
   padding-top: 110px;

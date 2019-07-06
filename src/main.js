@@ -7,6 +7,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '@/assets/scss/fonts.scss'
 import VueScrollTo from 'vue-scrollto'
+import VueLazyload from 'vue-lazyload'
+ 
+Vue.use(VueLazyload)
 
 Vue.use(VueScrollTo)
 
