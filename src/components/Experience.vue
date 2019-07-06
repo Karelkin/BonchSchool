@@ -3,7 +3,7 @@
     <div class='row'>
       <div class="col-10 offset-1 wrapper">
         <h2>Что ждет участников?</h2>
-        <p>В школе ты получишь актуальные знания в сфере IT, выберешь для себя подходящее направление, приобретешь практические  навыки и новых друзей</p>
+        <p>В школе ты получишь актуальные знания в сфере IT, выберешь для себя подходящее направление, приобретешь практические навыки и новых друзей</p>
         <div class='types'>
           <div class='item-1'>
             <img src="@/assets/img/type-1.svg" alt="">
@@ -25,7 +25,16 @@
 </template>
 
 <script>
-  
+  export default{
+    data(){
+      return{
+
+      }
+    },
+    computed: {
+
+    }
+  }
 </script>
 
 <style lang='scss' scoped>

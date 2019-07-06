@@ -39,10 +39,10 @@ export default{
 </script>
 
 <style lang='scss' scoped>
-*{
-  padding-left: 0;
-  padding-right: 0;
-}
+// *{
+//   padding-left: 0;
+//   padding-right: 0;
+// }
 .menu__icon {
   display: none;
   width: 45px;
