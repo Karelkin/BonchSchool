@@ -138,7 +138,7 @@ export default{
     font-size: 24px;
     line-height: 29px;
     text-decoration: none;
-    padding: 5px;
+    padding: 5px 6px;
   }
   li:hover{
     cursor: pointer;
@@ -173,6 +173,9 @@ export default{
     }
     h2{
       margin-top: 40px;
+    }
+    li{
+      padding: 5px 10px;
     }
   }
   .course__items{
@@ -235,6 +238,9 @@ export default{
     h2{
       font-size: 40px;
       line-height: 50px;
+    }
+    li{
+      font-size: 22px;
     }
   }
   .course1:before,
