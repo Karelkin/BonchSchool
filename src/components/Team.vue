@@ -9,39 +9,39 @@
       <div class="col-md-5 offset-md-2 col-6 offset-0 items-left">
         <div class='item'>
           <img src="@/assets/img/team-1.png" alt="">
-          <h6>Черномырдин Владимир</h6>
+          <a href="https://vk.com/id_d1kobraz" title='https://vk.com/id_d1kobraz' target="_blank"><h6>Черномырдин Владимир</h6></a>
           <p>Руководитель школы</p>
         </div>
         <div class='item'>
           <img src="@/assets/img/team-2.png" alt="">              
-          <h6>Суриков Владислав</h6>
+          <a href="https://vk.com/id51525123" title='https://vk.com/id51525123' target="_blank"><h6>Суриков Владислав</h6></a>
           <p>Руководитель направления Back-end</p>
         </div>
         <div class='item'>
           <img src="@/assets/img/team-3.png" alt="">
-          <h6>Горшенина Александра</h6>
+          <a href="https://vk.com/id_arika" title='https://vk.com/id_arika' target="_blank"><h6>Горшенина Александра</h6></a>
           <p>Руководитель направления Design</p>
         </div>
         <div class='item'>
           <img src="@/assets/img/team-4.png" alt="">
-          <h6>Крикун Дарина</h6>
+          <a href="https://vk.com/rina_babyz" title='https://vk.com/rina_babyz' target="_blank"><h6>Крикун Дарина</h6></a>
           <p>Руководитель направления SMM</p>
         </div>
       </div>
       <div class="col-md-5 col-6 items-right">
         <div class='item'>
           <img src="@/assets/img/team-5.png" alt="">
-          <h6>Глазков Глеб</h6>
+          <a href="https://vk.com/eye_kov" title='https://vk.com/eye_kov' target="_blank"><h6>Глазков Глеб</h6></a>
           <p>Координатор школы</p>
         </div>
         <div class='item'>
           <img src="@/assets/img/team-6.png" alt="">
-          <h6>Липкович Денис</h6>
+          <a href="https://vk.com/waar_we" title='https://vk.com/waar_we' target="_blank"><h6>Липкович Денис</h6></a>
           <p>Руководитель направления Front-end</p>
         </div>
         <div class='item'>
           <img src="@/assets/img/team-7.png" alt="">
-          <h6>Герман Олег</h6>
+          <a href="https://vk.com/oleggerman2000" title='https://vk.com/oleggerman2000' target="_blank"><h6>Герман Олег</h6></a>
           <p>Руководитель направления Mobile Development</p>
         </div>
       </div>
@@ -68,12 +68,16 @@
     max-width: 300px;
     width: 100%;
   }
+  a{
+    color: #F6933F;
+  }
   h6{
     color: #F6933F;
     font-family: 'Avenir Next Cyr Demi';
     font-size: 28px;
     line-height: 30px;
     margin-top: 20px;
+    cursor: pointer;
   }
   p{
     font-size: 24px;

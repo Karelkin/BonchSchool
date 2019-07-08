@@ -28,6 +28,7 @@
   top: 0;
   right: 0px;
   width: 480px;
+  z-index: 5;
 }
 .school__info{
   padding-top: 110px;

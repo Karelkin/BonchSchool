@@ -2,7 +2,6 @@
   <div>
     <app-header></app-header>
     <school></school>
-    <geek></geek>
     <experience></experience>
     <courses></courses>
     <study></study>

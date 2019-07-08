@@ -45,18 +45,17 @@ export default{
 // }
 .menu__icon {
   display: none;
-  width: 45px;
-  height: 35px;
+  width: 40px;
+  height: 30px;
   position: relative;
   cursor: pointer;
 }
 .menu__icon span {
   display: block;
   position: absolute;
-  height: 6px;
+  height: 4px;
   width: 100%;
   background: #333333;
-  border-radius: 9px;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
@@ -89,19 +88,21 @@ export default{
 }
 .header__nav {
   background-color: #fff;
-  z-index: 5;
+  z-index: 999;
   nav.open{
     display: flex;  
   }
 }
 .app-header{
-  min-height: 96px;
+  min-height: 75px;
 }
 .background{
   background: linear-gradient(90deg, #639A49 0%, #B1C527 13.02%, #FCD23F 31.87%, #E77230 53.73%, #4FC2D0 77.6%, #222487 94.27%);
-  filter: blur(40px);
-  height: 65px;
+  filter: blur(25px);
+  height: 76px;
   width: 100%;
+  position: fixed;
+  z-index: 5;
 }
 .header{
   display: flex;
@@ -109,9 +110,11 @@ export default{
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 96px;
+  min-height: 75px;
   background-color: #fff;
   width: 100%;
+  position: fixed;
+  z-index: 998;
 }
 .header__logo{
   display: flex;
@@ -185,7 +188,7 @@ export default{
     }
   }
   .background{
-    height: 95px;
+    height: 85px;
   }
 }
 </style>
