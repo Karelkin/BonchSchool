@@ -96,7 +96,7 @@ export default{
   background-repeat: no-repeat;
   min-height: 480px;
   background-size: 101% 100%;  
-  transition: background-image .6s linear;
+  transition: background-image .6s linear .2s;
   // background: linear-gradient(300.85deg, #57944F 3.8%, #97B730 90.98%);
 }
 .course1{
@@ -207,7 +207,7 @@ export default{
   .course3:before,
   .course4:before,
   .course5:before,{
-    transition: background .5s linear;
+    transition: background .5s linear .2s;
     content: '';
     position: absolute;
     background-size: 240px 240px; 
